@@ -28,9 +28,9 @@
                 </div>
 
                 <div class="form-group">
-                    <input asp-for="ImageFile">
+                    <input asp-for="ImageFile" class="input-image">
                     <span asp-validation-for="ImageFile " class="text-danger"></span>
-                    <img src="~/upload/slider/@Model.SliderImage" width="250px" height="200px" >
+                    <img src="~/upload/slider/@Model.SliderImage" width="250px" height="200px" class="important-image">
                 </div>
 
                 <button type="submit" class="btn btn-primary">Submit</button>

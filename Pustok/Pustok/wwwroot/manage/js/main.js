@@ -30,4 +30,16 @@
             }
         })
     })
+
+    $(".input-image").change(function () {
+        $("important-image").attr("src",`~/upload/slider/${}`)
+        
+    })
+    
+})
+
+let input = document.querySelector(".input-image")
+input.addEventListener('change', function (e) {
+    let img = document.querySelector("important-image")
+    img.setAttribute("src", `~/upload/slider/${}`)
 })
